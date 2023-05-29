@@ -7,6 +7,9 @@
 }
 body{
     font-family: montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav{
     background: #008000;
@@ -41,12 +44,22 @@ a.Hlist,a.hover{
     transition:.5s;
 }
 #footer{
-    background-color: rgb(36, 35, 35);
-    position:relative;
-    height:100px;
+    background-color: rgb(184, 179, 179);
+    position:fixed;
+    height:40px;
     margin-top: -100px;
     clear:both;
+    bottom:10px;
+    width: 100%;
+    font-style:italic ;
 }
 table, th, td {
   border:1px solid black;
+  width:70%;
+  text-align: center;
+}
+h1 {text-align: center;}
+.title-footer{
+    font-weight:30;
+    font-size:medium;
 }
