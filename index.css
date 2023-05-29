@@ -43,6 +43,14 @@ a.Hlist,a.hover{
     background: #035f45;
     transition:.5s;
 }
+a.Hadd,a.hover{
+    background: #035f45;
+    transition:.5s;
+}
+a.Hcontact,a.hover{
+    background: #035f45;
+    transition:.5s;
+}
 #footer{
     background-color: rgb(184, 179, 179);
     position:fixed;
@@ -62,4 +70,58 @@ h1 {text-align: center;}
 .title-footer{
     font-weight:30;
     font-size:medium;
+}
+input[type=add] {
+    width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: max-content;
+  font-size: 18px;
+  }
+input[type=add]:hover {
+    background-color: #45a049;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+.phone{
+    font-size: 20px;
+}
+.email{
+    font-size: 20px;
+}
+.address{
+    font-size: 20px;
+}
+.free{
+    font-size: 25px;
+}
+.flex-container {
+    display: flex;
+    background-color: #f1f1f1;
+  }
+.book-name{
+    font-size: 25px;
+}
+.author-name{
+    font-size: 25px;
+}
+.action{
+    font-size: 25px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }
