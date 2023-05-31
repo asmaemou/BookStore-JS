@@ -1,4 +1,4 @@
-const listContent = "<h1>Add a New Book</h1> \n \
+const listContent = "<h1>List of Books</h1> \n \
 <br></br> \n \
 <table class='center'> \n \
     <tr> \n \
@@ -41,6 +41,7 @@ const contactContent="<h1>Contact Information</h1> \n \
 "
 
 const middlePart = document.getElementById("middle-part")
+middlePart.innerHTML=listContent
 const displayListBtn = document.getElementById("display-list")
 const displayAddBtn  = document.getElementById("display-add")
 const diplayContactBtn = document.getElementById("diplay-contact")
@@ -56,3 +57,4 @@ displayAddBtn.addEventListener('click', (event) => {
 diplayContactBtn.addEventListener('click',(event)=>{
     middlePart.innerHTML=contactContent
 })
+
