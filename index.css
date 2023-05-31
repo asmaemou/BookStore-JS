@@ -38,18 +38,17 @@ nav ul li a{
     border-radius:3px;
     text-transform: uppercase;
 }
-a.Hlist,a.hover{
+
+.active{
     background: #035f45;
     transition:.5s;
 }
-a.Hadd,a.hover{
+
+.menu-item:hover{
     background: #035f45;
     transition:.5s;
 }
-a.Hcontact,a.hover{
-    background: #035f45;
-    transition:.5s;
-}
+
 #footer{
     background-color: rgb(184, 179, 179);
     position:fixed;

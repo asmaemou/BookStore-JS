@@ -46,15 +46,30 @@ const displayListBtn = document.getElementById("display-list")
 const displayAddBtn  = document.getElementById("display-add")
 const diplayContactBtn = document.getElementById("diplay-contact")
 
+const listLink = document.getElementById("list-link") 
+const addLink = document.getElementById("add-link") 
+const contactLink = document.getElementById("contact-link") 
+
+
+
 displayListBtn.addEventListener('click' , (event) => {
     middlePart.innerHTML = listContent
+    listLink.classList.add("active")
+    addLink.classList.remove("active")
+    contactLink.classList.remove("active")
 })
 
 displayAddBtn.addEventListener('click', (event) => {
     middlePart.innerHTML=addContent
+    listLink.classList.remove("active")
+    addLink.classList.add("active")
+    contactLink.classList.remove("active")
 })
 
 diplayContactBtn.addEventListener('click',(event)=>{
     middlePart.innerHTML=contactContent
+    listLink.classList.remove("active")
+    addLink.classList.remove("active")
+    contactLink.classList.add("active")
 })
 
