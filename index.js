@@ -28,14 +28,10 @@ const addContent="<h1>Add a New Book</h1> \n \
 </form>"
 
 const contactContent="<h1>Contact Information</h1> \n \
-<br></br> \n \
 <p class='free'>Feel free to ask any question</p> \n \
-<br></br> \n \
 <ul>\n \
     <li class='phone'>Phone Number:+212 694729439</li> \n \
-    <br></br>\n \
     <li class='email'>Email Address: amouradi2002@gmail.com</li>\n \
-    <br></br>\n \
     <li class='address'><Address>1287 Fremont St, Morocco</Address></li>\n \
 </ul> \n \
 "
