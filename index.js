@@ -69,3 +69,30 @@ diplayContactBtn.addEventListener('click',(event)=>{
     contactLink.classList.add("active")
 })
 
+let p1=document.createElement("p");
+p1.textContent="firstParagraph";
+
+const content=document.querySelector(".content");
+content.appendChild(p1);
+content.appendChild(p2);
+//append paragraph to the body
+document.body.appendChild(p2);
+
+p1.setAttribute("class","para1");
+//update attribute value only
+p1.setAttribute("class","para");
+
+//remove attribute using removeAttribute() method
+p1.removeAttribute("class");
+
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV" class="mystyle">
+  This is a DIV element.
+</div>
+
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.remove("mystyle");
+  }
