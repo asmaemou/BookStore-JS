@@ -27,14 +27,6 @@ const addContent="<h1>Add a New Book</h1> \n \
     <input type='add' value='Add'>\n \
 </form>"
 
-const contactContent="<h1>Contact Information</h1> \n \
-<p class='free'>Feel free to ask any question</p> \n \
-<ul>\n \
-    <li class='phone'>Phone Number:+212 694729439</li> \n \
-    <li class='email'>Email Address: amouradi2002@gmail.com</li>\n \
-    <li class='address'><Address>1287 Fremont St, Morocco</Address></li>\n \
-</ul> \n \
-"
 
 const middlePart = document.getElementById("middle-part")
 middlePart.innerHTML=listContent
@@ -62,37 +54,37 @@ displayAddBtn.addEventListener('click', (event) => {
     contactLink.classList.remove("active")
 })
 
+const h1 = document.createElement('h1')
+h1.textContent = 'Contact Information'
+const contactPara = document.createElement('p')
+contactPara.textContent= 'Feel free to ask any question'
+contactPara.className='free'
+const Ucredential=document.createElement('ul')
+const PLcredential=document.createElement('li')
+const ELcredential=document.createElement('li')
+const ALcredential=document.createElement('li')
+const Address=document.createElement('address')
+PLcredential.textContent='Phone Number:+212 694729439'
+PLcredential.className='phone'
+ELcredential.textContent='Email Address: amouradi2002@gmail.com'
+ELcredential.className='email'
+Address.textContent='1287 Fremont St, Morocco'
+ALcredential.className='address'
+
+Ucredential.appendChild(PLcredential)
+Ucredential.appendChild(ELcredential) //append li inside ul
+Ucredential.appendChild(ALcredential)
+//append the address to li
+ALcredential.appendChild(Address)
+
 diplayContactBtn.addEventListener('click',(event)=>{
-    middlePart.innerHTML=contactContent
+    middlePart.innerHTML = '' //remove the previous content
+    middlePart.appendChild(h1) 
+    middlePart.appendChild(contactPara)
+    //append ul to middle part
+    middlePart.appendChild(Ucredential)
     listLink.classList.remove("active")
     addLink.classList.remove("active")
     contactLink.classList.add("active")
 })
 
-let p1=document.createElement("p");
-p1.textContent="firstParagraph";
-
-const content=document.querySelector(".content");
-content.appendChild(p1);
-content.appendChild(p2);
-//append paragraph to the body
-document.body.appendChild(p2);
-
-p1.setAttribute("class","para1");
-//update attribute value only
-p1.setAttribute("class","para");
-
-//remove attribute using removeAttribute() method
-p1.removeAttribute("class");
-
-
-<button onclick="myFunction()">Try it</button>
-
-<div id="myDIV" class="mystyle">
-  This is a DIV element.
-</div>
-
-function myFunction() {
-    var element = document.getElementById("myDIV");
-    element.classList.remove("mystyle");
-  }
